@@ -10,6 +10,13 @@ LVO_RATE:25:15
 # Minimum time separation buffer in seconds between departures on the same runway
 MIN_DEP_INTERVAL:102:144
 
+///
+
+# OEJN
+OEJN:A:34L,34R:*:D:34C,34R:*:34C,34R:35_25
+
+///
+
 # OERK Capacity and Flow Rate Settings
 # Format: CAP_TYPE:VALUE:EVENT_VALUE
 
