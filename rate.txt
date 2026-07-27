@@ -1,30 +1,19 @@
-# OEJN Capacity and Flow Rate Settings
-# Format: CAP_TYPE:VALUE:EVENT_VALUE
-
-# Normal Departure Capacity (35 departures per hour)
-DEP_RATE:35:25
-
-# Low Visibility Operations Capacity (25 departures per hour)
-LVO_RATE:25:15
-
-# Minimum time separation buffer in seconds between departures on the same runway
-MIN_DEP_INTERVAL:102:144
-
-///
-
 # OEJN
-OEJN:A:34L,34R:*:D:34C,34R:*:34C,34R:35_25
+# 34 DDRO
+OEJN:A:34L,34R:*:D:34C,34R:*:34C,34R:35_25,25_15
+# 16 DDRO
+OEJN:A:16L,16R:*:D:16C,16L:*:16C,16L:35_25,25_15
+# 34 SDRO
+OEJN:A:34L,34R:*:D:34C:34R:34C,34R:35_25,25_15
+# 16 SDRO
+OEJN:A:16L,16R:*:D:16C:16L:16C,16L:35_25,25_15
 
-///
-
-# OERK Capacity and Flow Rate Settings
-# Format: CAP_TYPE:VALUE:EVENT_VALUE
-
-# Normal Departure Capacity (35 departures per hour)
-DEP_RATE:35:25
-
-# Low Visibility Operations Capacity (25 departures per hour)
-LVO_RATE:25:15
-
-# Minimum time separation buffer in seconds between departures on the same runway
-MIN_DEP_INTERVAL:102:144
+# OERK
+# 33 DARO
+OEJN:A:33L,33R:*:D:33R:*:33L,33R:35_25,25_15
+# 15 DARO
+OEJN:A:15L,15R:*:D:15L:*:15L,15R:35_25,25_15
+# 33 SARO
+OEJN:A:33L:33R:D:33R:*:33L,33R:35_25,25_15
+# 15 SARO
+OEJN:A:15R:15L:D:15L:*:15L,15R:35_25,25_15
